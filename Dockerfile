@@ -21,10 +21,9 @@ RUN mkdir -p /var/lib/uhf-server
 # Set working directory
 WORKDIR /app
 
-# Install UHF server (modified to not use sudo)
+# Install UHF server 
 RUN curl -sL https://link.uhfapp.com/setup.sh > setup.sh && \
     chmod +x setup.sh && \
-    sed -i 's/sudo //g' setup.sh && \
     bash setup.sh && \
     rm setup.sh
 
