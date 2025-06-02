@@ -1,5 +1,12 @@
 # UHF Server - Changelog
 
+## 1.4.0
+
+- UHF Server can now detect commercials. Set the `--enable-commercial-detection` argument when invoking the
+command line tool or enable the commercial detection checkbox in the macOS or Windows GUI. This commercial 
+detection takes place when a scheduled recording finishes and it can take several minutes to complete. This
+functionality is compatible with UHF 1.67.0 (iOS) and 1.55.0 (tvOS).
+
 ## 1.3.0
 
 - The GUI for Windows and macOS now includes an option to automatically launch the server at system startup.
