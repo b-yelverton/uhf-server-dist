@@ -12,5 +12,5 @@ services:
     environment:
       - PORT=${PORT:-8000}
       - PASSWORD=${PASSWORD:-} # Optional password protection
-    command: uhf-server --port ${PORT:-8000} --recordings-dir /recordings ${PASSWORD:+--password ${PASSWORD}}
+    command: uhf-server --port ${PORT:-8000} --recordings-dir /recordings ${PASSWORD:+--password ${PASSWORD}} --enable-commercial-detection
     stop_grace_period: 30s
