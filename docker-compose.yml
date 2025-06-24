@@ -8,7 +8,7 @@ services:
     ports:
       - "${PORT:-8000}:${PORT:-8000}"
     volumes:
-      - ${RECORDINGS_DIR:-./recordings}:/recordings
+      - /mnt/Sovereign/uhf:/recordings
     environment:
       - PORT=${PORT:-8000}
       - PASSWORD=${PASSWORD:-} # Optional password protection
