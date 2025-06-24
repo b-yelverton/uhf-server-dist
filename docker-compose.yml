@@ -6,7 +6,7 @@ services:
     container_name: uhf-server
     restart: unless-stopped
     ports:
-      - "8080:8000"
+      - "8091:8000"
     volumes:
       - /mnt/Sovereign/uhf:/recordings
     environment:
